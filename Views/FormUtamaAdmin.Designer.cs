@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             panelSidebarAdmin = new Panel();
+            btnKeluarAdmin = new Button();
+            btnBahanBakuAdmin1 = new Button();
+            btnDasboardAdmin1 = new Button();
+            lblSelamatDatangAdmin = new Label();
             panelKontenAdmin = new Panel();
             lblJudulApp = new Label();
-            lblSelamatDatangAdmin = new Label();
-            btnDasboardAdmin1 = new Button();
-            btnBahanBakuAdmin1 = new Button();
-            btnKeluarAdmin = new Button();
             panelSidebarAdmin.SuspendLayout();
             panelKontenAdmin.SuspendLayout();
             SuspendLayout();
@@ -50,12 +50,48 @@
             panelSidebarAdmin.Size = new Size(172, 434);
             panelSidebarAdmin.TabIndex = 0;
             // 
+            // btnKeluarAdmin
+            // 
+            btnKeluarAdmin.Location = new Point(10, 397);
+            btnKeluarAdmin.Name = "btnKeluarAdmin";
+            btnKeluarAdmin.Size = new Size(94, 29);
+            btnKeluarAdmin.TabIndex = 4;
+            btnKeluarAdmin.Text = "Logout";
+            btnKeluarAdmin.UseVisualStyleBackColor = true;
+            // 
+            // btnBahanBakuAdmin1
+            // 
+            btnBahanBakuAdmin1.Location = new Point(10, 85);
+            btnBahanBakuAdmin1.Name = "btnBahanBakuAdmin1";
+            btnBahanBakuAdmin1.Size = new Size(94, 29);
+            btnBahanBakuAdmin1.TabIndex = 3;
+            btnBahanBakuAdmin1.Text = "Bahan Baku";
+            btnBahanBakuAdmin1.UseVisualStyleBackColor = true;
+            // 
+            // btnDasboardAdmin1
+            // 
+            btnDasboardAdmin1.Location = new Point(10, 50);
+            btnDasboardAdmin1.Name = "btnDasboardAdmin1";
+            btnDasboardAdmin1.Size = new Size(94, 29);
+            btnDasboardAdmin1.TabIndex = 2;
+            btnDasboardAdmin1.Text = "Dashboard";
+            btnDasboardAdmin1.UseVisualStyleBackColor = true;
+            // 
+            // lblSelamatDatangAdmin
+            // 
+            lblSelamatDatangAdmin.AutoSize = true;
+            lblSelamatDatangAdmin.Location = new Point(3, 0);
+            lblSelamatDatangAdmin.Name = "lblSelamatDatangAdmin";
+            lblSelamatDatangAdmin.Size = new Size(92, 20);
+            lblSelamatDatangAdmin.TabIndex = 1;
+            lblSelamatDatangAdmin.Text = "Halo, Admin";
+            // 
             // panelKontenAdmin
             // 
             panelKontenAdmin.Controls.Add(lblJudulApp);
             panelKontenAdmin.Location = new Point(204, 12);
             panelKontenAdmin.Name = "panelKontenAdmin";
-            panelKontenAdmin.Size = new Size(566, 398);
+            panelKontenAdmin.Size = new Size(1296, 398);
             panelKontenAdmin.TabIndex = 1;
             // 
             // lblJudulApp
@@ -67,47 +103,11 @@
             lblJudulApp.TabIndex = 0;
             lblJudulApp.Text = "SIKOPI DOPY";
             // 
-            // lblSelamatDatangAdmin
-            // 
-            lblSelamatDatangAdmin.AutoSize = true;
-            lblSelamatDatangAdmin.Location = new Point(3, 0);
-            lblSelamatDatangAdmin.Name = "lblSelamatDatangAdmin";
-            lblSelamatDatangAdmin.Size = new Size(92, 20);
-            lblSelamatDatangAdmin.TabIndex = 1;
-            lblSelamatDatangAdmin.Text = "Halo, Admin";
-            // 
-            // btnDasboardAdmin1
-            // 
-            btnDasboardAdmin1.Location = new Point(10, 50);
-            btnDasboardAdmin1.Name = "btnDasboardAdmin1";
-            btnDasboardAdmin1.Size = new Size(94, 29);
-            btnDasboardAdmin1.TabIndex = 2;
-            btnDasboardAdmin1.Text = "Dashboard";
-            btnDasboardAdmin1.UseVisualStyleBackColor = true;
-            // 
-            // btnBahanBakuAdmin1
-            // 
-            btnBahanBakuAdmin1.Location = new Point(10, 85);
-            btnBahanBakuAdmin1.Name = "btnBahanBakuAdmin1";
-            btnBahanBakuAdmin1.Size = new Size(94, 29);
-            btnBahanBakuAdmin1.TabIndex = 3;
-            btnBahanBakuAdmin1.Text = "Bahan Baku";
-            btnBahanBakuAdmin1.UseVisualStyleBackColor = true;
-            // 
-            // btnKeluarAdmin
-            // 
-            btnKeluarAdmin.Location = new Point(10, 397);
-            btnKeluarAdmin.Name = "btnKeluarAdmin";
-            btnKeluarAdmin.Size = new Size(94, 29);
-            btnKeluarAdmin.TabIndex = 4;
-            btnKeluarAdmin.Text = "Logout";
-            btnKeluarAdmin.UseVisualStyleBackColor = true;
-            // 
             // FormUtamaAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1512, 450);
             Controls.Add(panelKontenAdmin);
             Controls.Add(panelSidebarAdmin);
             Name = "FormUtamaAdmin";

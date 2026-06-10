@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             lblJudul = new Panel();
+            btnTambahGreenAdmin = new Button();
             tabBahanAdmin = new TabControl();
             tabGreenAdmin = new TabPage();
             dgvGreenAdmin = new DataGridView();
             tabRoastAdmin = new TabPage();
             dgvRoastAdmin = new DataGridView();
-            btnTambahGreenAdmin = new Button();
             label2 = new Label();
             label1 = new Label();
             lblJudul.SuspendLayout();
@@ -53,17 +53,26 @@
             lblJudul.Controls.Add(label1);
             lblJudul.Location = new Point(12, 2);
             lblJudul.Name = "lblJudul";
-            lblJudul.Size = new Size(782, 442);
+            lblJudul.Size = new Size(1569, 442);
             lblJudul.TabIndex = 2;
+            // 
+            // btnTambahGreenAdmin
+            // 
+            btnTambahGreenAdmin.Location = new Point(13, 112);
+            btnTambahGreenAdmin.Name = "btnTambahGreenAdmin";
+            btnTambahGreenAdmin.Size = new Size(168, 29);
+            btnTambahGreenAdmin.TabIndex = 3;
+            btnTambahGreenAdmin.Text = "+ Tambah Green Bean";
+            btnTambahGreenAdmin.UseVisualStyleBackColor = true;
             // 
             // tabBahanAdmin
             // 
             tabBahanAdmin.Controls.Add(tabGreenAdmin);
             tabBahanAdmin.Controls.Add(tabRoastAdmin);
-            tabBahanAdmin.Location = new Point(6, 169);
+            tabBahanAdmin.Location = new Point(3, 172);
             tabBahanAdmin.Name = "tabBahanAdmin";
             tabBahanAdmin.SelectedIndex = 0;
-            tabBahanAdmin.Size = new Size(776, 267);
+            tabBahanAdmin.Size = new Size(1496, 267);
             tabBahanAdmin.TabIndex = 4;
             tabBahanAdmin.SelectedIndexChanged += tabBahanAdmin_SelectedIndexChanged;
             // 
@@ -73,7 +82,7 @@
             tabGreenAdmin.Location = new Point(4, 29);
             tabGreenAdmin.Name = "tabGreenAdmin";
             tabGreenAdmin.Padding = new Padding(3);
-            tabGreenAdmin.Size = new Size(768, 234);
+            tabGreenAdmin.Size = new Size(1488, 234);
             tabGreenAdmin.TabIndex = 0;
             tabGreenAdmin.Text = "Green Bean";
             tabGreenAdmin.UseVisualStyleBackColor = true;
@@ -83,6 +92,7 @@
             dgvGreenAdmin.AllowUserToAddRows = false;
             dgvGreenAdmin.AllowUserToDeleteRows = false;
             dgvGreenAdmin.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvGreenAdmin.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvGreenAdmin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvGreenAdmin.Dock = DockStyle.Fill;
             dgvGreenAdmin.Location = new Point(3, 3);
@@ -90,7 +100,7 @@
             dgvGreenAdmin.ReadOnly = true;
             dgvGreenAdmin.RowHeadersWidth = 51;
             dgvGreenAdmin.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvGreenAdmin.Size = new Size(762, 228);
+            dgvGreenAdmin.Size = new Size(1482, 228);
             dgvGreenAdmin.TabIndex = 0;
             // 
             // tabRoastAdmin
@@ -99,7 +109,7 @@
             tabRoastAdmin.Location = new Point(4, 29);
             tabRoastAdmin.Name = "tabRoastAdmin";
             tabRoastAdmin.Padding = new Padding(3);
-            tabRoastAdmin.Size = new Size(768, 234);
+            tabRoastAdmin.Size = new Size(1488, 234);
             tabRoastAdmin.TabIndex = 1;
             tabRoastAdmin.Text = "Roast Bean";
             tabRoastAdmin.UseVisualStyleBackColor = true;
@@ -116,17 +126,8 @@
             dgvRoastAdmin.ReadOnly = true;
             dgvRoastAdmin.RowHeadersWidth = 51;
             dgvRoastAdmin.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvRoastAdmin.Size = new Size(762, 228);
+            dgvRoastAdmin.Size = new Size(1482, 228);
             dgvRoastAdmin.TabIndex = 1;
-            // 
-            // btnTambahGreenAdmin
-            // 
-            btnTambahGreenAdmin.Location = new Point(13, 112);
-            btnTambahGreenAdmin.Name = "btnTambahGreenAdmin";
-            btnTambahGreenAdmin.Size = new Size(168, 29);
-            btnTambahGreenAdmin.TabIndex = 3;
-            btnTambahGreenAdmin.Text = "+ Tambah Green Bean";
-            btnTambahGreenAdmin.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -150,7 +151,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1515, 528);
             Controls.Add(lblJudul);
             Name = "FormBahanBakuAdmin";
             Text = "FormBahanBakuAdmin";
