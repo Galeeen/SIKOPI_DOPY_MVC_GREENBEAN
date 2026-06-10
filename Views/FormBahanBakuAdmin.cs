@@ -13,11 +13,30 @@ namespace SIKOPI_DOPY_MVC_GREENBEAN.Views
         public FormBahanBakuAdmin()
         {
             InitializeComponent();
+
+            Load -= FormBahanBakuAdmin_Load;
+            Load += FormBahanBakuAdmin_Load;
+
+            btnTambahGreenAdmin.Click -= btnTambahGreenAdmin_Click;
+            btnTambahGreenAdmin.Click += btnTambahGreenAdmin_Click;
+        }
+
+        private void FormBahanBakuAdmin_Load(object? sender, EventArgs e)
+        {
+            btnTambahGreenAdmin.Visible = true;
+            btnTambahGreenAdmin.Enabled = true;
+            btnTambahGreenAdmin.BringToFront();
+        }
+
+        private void btnTambahGreenAdmin_Click(object? sender, EventArgs e)
+        {
+            FormDialogGreenBean form = new FormDialogGreenBean();
+            form.ShowDialog();
         }
 
         private void tabBahanAdmin_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // Untuk sekarang dikosongkan dulu.
         }
     }
 }
